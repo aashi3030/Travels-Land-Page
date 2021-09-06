@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheets" href="style.css">
+  <title>Travel Landing Page</title>
+  <style>
+    video {
+      max-width: 100%;
+      height:auto;
+    }
+    body {
+      background-color: darkgreen;
+         }
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      text-decoration-style: double;
+    }
+    h3 {
+      color: white;
+      text-align: center;
+    }
+    h4 {
+      color: white;
+      text-align: center;
+    }
+    h4 {
+      color: white;
+      text-align: center;
+    }
+    
+    
+    img {
+      width: 50px;
+      border-radius: 25px;
+    }
+    p {
+      color:whitesmoke;
+      text-align: center;
+    }
+    p.dotted {border-style: dotted;}
+  </style>
+</head>
+<body>
+  <h1>Travel Landing Page</h1>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Travel</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="vedio.mp4.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+    <div class="text">
+    <h2>Never Stop</h2>
+    
+    <p class="dotted">Many Dreams and many investments make a plan for a travel across world . So lets just hold hands with our website and travel across world!!!.
+      <h3>Exploring the world</h3>
+    <h4>>>>  Exploring  Across Country  </h4>
+    <h4>>>> Exploring  Across States  </h4>
+    
+    </p>
+    <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="facebook2.png" alt="" /></a></li>
+        <li><a href="#"><img src="instagram.png" alt="" /></a></li>
+          <li><a href="#"><img src="twitter.png" alt="" /></a></li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li> 
+        <li><a href="#">News</a></li> 
+        <li><a href="#">Destination</a></li> 
+        <li><a href="#">Blog</a></li> 
+        <li><a href="#">Contact</a></li>  
+      </ul>
+    </div>
+    <script>
+       const menuToggle = document.querySelector('.toggle')
+       const showcase = document.querySelector('.showcase')
+
+
+       menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active')
+          showcase.classList.toggle('active')
+       } )    
+    </script>
+</body>
+</html>
